@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		String xString = sc.next();
+		System.out.println("You typed " + xString);
+		
+		int xInt = sc.nextInt();
+		System.out.println("You typed " + xInt);
+		
+		double xDouble = sc.nextDouble();
+		System.out.println("You typed " + xDouble);
+		
+		char xChar = sc.next().charAt(0);
+		System.out.println("You typed " + xChar);
+		
+		xString = sc.next();
+		xInt = sc.nextInt();
+		xDouble = sc.nextDouble();
+		System.out.printf("String %s, int %d, double %.2f%n", xString, xInt, xDouble);
+		
+		
+		
+		sc.close();
+
+	}
+
+}
